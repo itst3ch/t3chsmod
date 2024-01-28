@@ -2,6 +2,7 @@ package net.heyt3ch.t3chsmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.heyt3ch.t3chsmod.item.ModdedItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,7 +14,8 @@ public class T3CHsMod implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
-	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+	public void onInitialize()
+	{
+		ModdedItems.registerModItems();
 	}
 }
