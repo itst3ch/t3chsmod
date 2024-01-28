@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "t3chsmod",
+	"version": "${version}",
+	"name": "T3CH's Mod",
+	"description": "Shits and Giggles",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/t3chsmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.heyt3ch.t3chsmod.T3CHsMod"
+		],
+		"client": [
+			"net.heyt3ch.t3chsmod.T3CHsModClient"
+		],
+		"fabric-datagen": [
+			"net.heyt3ch.t3chsmod.T3CHsModDataGenerator"
+		]
+	},
+	"mixins": [
+		"t3chsmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
