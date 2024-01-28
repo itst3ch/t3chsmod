@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.heyt3ch.t3chsmod.T3CHsMod;
+import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -21,7 +22,7 @@ public class ModdedItems
         return Registry.register(Registries.ITEM, new Identifier(T3CHsMod.MOD_ID, name), item); //method to use for registration of items
     }
 
-    public static final Item MANGO = registerItem("mango", new Item(new FabricItemSettings())); //registers mango item
+    public static final Item MANGO = registerItem("mango", new Item(new FabricItemSettings().food(ModdedFoodComponents.MANGO))); //registers mango item
 
     private  static  void addItemsToFoodTab(FabricItemGroupEntries entries){
         entries.add(MANGO);
