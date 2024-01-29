@@ -4,18 +4,20 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.heyt3ch.t3chsmod.T3CHsMod;
-import net.minecraft.item.FoodComponent;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 
 public class ModdedItems
 {
     public static void registerModItems(){
         T3CHsMod.LOGGER.info("Registering mod items for " + T3CHsMod.MOD_ID); //runs at init to register all items
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModdedItems :: addItemsToFoodTab);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModdedItems :: addItemsToFoodTab); //adds entries to food tab
     }
 
     private static Item registerItem(String name, Item item){
@@ -23,6 +25,7 @@ public class ModdedItems
     }
 
     public static final Item MANGO = registerItem("mango", new Item(new FabricItemSettings().food(ModdedFoodComponents.MANGO))); //registers mango item
+
 
     private  static  void addItemsToFoodTab(FabricItemGroupEntries entries){
         entries.add(MANGO);
