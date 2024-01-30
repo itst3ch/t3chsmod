@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "t3chsmod:item/rose_gold_sword"
+  }
+}
