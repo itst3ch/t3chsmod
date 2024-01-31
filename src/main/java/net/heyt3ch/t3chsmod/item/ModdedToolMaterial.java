@@ -1,6 +1,7 @@
 package net.heyt3ch.t3chsmod.item;
 
 import net.fabricmc.yarn.constants.MiningLevels;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -8,7 +9,7 @@ import java.util.function.Supplier;
 
 public enum ModdedToolMaterial implements ToolMaterial
 {
-    ROSE_GOLD(MiningLevels.IRON, 6.5f, 2.5f, 2, 14, () -> Ingredient.ofItems((ModdedItems.ROSE_GOLD_INGOT)));
+    ROSE_GOLD(350, 6.0f, 2.0f, MiningLevels.IRON, 14, () -> Ingredient.ofItems(Items.IRON_INGOT));
 
     private final int durability;
     private final float miningSpeed;

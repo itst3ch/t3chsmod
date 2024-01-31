@@ -29,7 +29,7 @@ public class ModdedItems
 
     public static final Item ROSE_GOLD_INGOT = registerItem("rose_gold_ingot", new Item(new FabricItemSettings()));
     public static final Item ROSE_GOLD_SWORD = registerItem("rose_gold_sword", new SwordItem(ModdedToolMaterial.ROSE_GOLD, 3, -2.4f, new FabricItemSettings()));
-    public static final Item ROSE_GOLD_PICKAXE = registerItem("rose_gold_pickaxe", new PickaxeItem(ModdedToolMaterial.ROSE_GOLD, 1, 2f, new FabricItemSettings()));
+    public static final Item ROSE_GOLD_PICKAXE = registerItem("rose_gold_pickaxe", new PickaxeItem(ModdedToolMaterial.ROSE_GOLD, 1, -2.8f, new FabricItemSettings()));
     public static final Item ROSE_GOLD_AXE = registerItem("rose_gold_axe", new AxeItem(ModdedToolMaterial.ROSE_GOLD, 6, -3.1f, new FabricItemSettings()));
     public static final Item ROSE_GOLD_HOE = registerItem("rose_gold_hoe", new HoeItem(ModdedToolMaterial.ROSE_GOLD, 0, 2f, new FabricItemSettings()));
     public static final Item ROSE_GOLD_SHOVEL = registerItem("rose_gold_shovel", new ShovelItem(ModdedToolMaterial.ROSE_GOLD, 0, 2f, new FabricItemSettings()));

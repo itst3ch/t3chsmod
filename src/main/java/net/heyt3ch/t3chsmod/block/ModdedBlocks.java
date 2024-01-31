@@ -21,7 +21,9 @@ import net.minecraft.util.Identifier;
 public class ModdedBlocks {
     public static void registerModBlocks() {
         T3CHsMod.LOGGER.info("Registering mod blocks for " + T3CHsMod.MOD_ID); //runs at init to register all blocks
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModdedBlocks:: addItemsToNaturalTab); //adds entries to food tab
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModdedBlocks:: addItemsToNaturalTab); //adds entries to natural tab
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModdedBlocks:: addItemsToNaturalTab); //adds entries to building blocks tab
+
     }
 
     private static Block registerBlock(String name, Block block) {
@@ -38,5 +40,10 @@ public class ModdedBlocks {
         entries.add(SAND_GRASS);
     }
 
+    private  static  void addItemsToBuildingTab(FabricItemGroupEntries entries){
+        entries.add(ROSE_GOLD_BLOCK);
+    }
+
     public static final Block SAND_GRASS = registerBlock("sand_grass", new SandGrass(StatusEffects.ABSORPTION, 0, FabricBlockSettings.copyOf(Blocks.SHORT_GRASS).nonOpaque().noCollision()));
+    public static final Block ROSE_GOLD_BLOCK = registerBlock("rose_gold_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 }
