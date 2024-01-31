@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "t3chsmod:rose_gold_nugget"
+    }
+  },
+  "result": {
+    "item": "t3chsmod:rose_gold_ingot",
+    "count": 1
+  }
+}
