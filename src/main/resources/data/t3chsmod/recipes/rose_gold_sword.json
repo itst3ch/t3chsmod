@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    " i ",
+    " / "
+  ],
+  "key": {
+    "i": {
+      "item": "t3chsmod:rose_gold_ingot"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "t3chsmod:rose_gold_sword",
+    "count": 1
+  }
+}

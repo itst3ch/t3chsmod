@@ -41,6 +41,8 @@ public class ModdedItems
     public static final Item ROSE_GOLD_LEGGINGS = registerItem("rose_gold_leggings", new ArmorItem(ModdedArmorMaterials.ROSE_GOLD, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item ROSE_GOLD_BOOTS = registerItem("rose_gold_boots", new ArmorItem(ModdedArmorMaterials.ROSE_GOLD, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
+    public static final Item ROSE_GOLD_HORSE_ARMOR = registerItem("rose_gold_horse_armor", new HorseArmorItem(6, "rose_gold", new FabricItemSettings()));
+
     private  static  void addItemsToFoodTab(FabricItemGroupEntries entries){
         entries.add(MANGO);
     }
@@ -56,6 +58,7 @@ public class ModdedItems
         entries.add(ROSE_GOLD_CHESTPLATE);
         entries.add(ROSE_GOLD_LEGGINGS);
         entries.add(ROSE_GOLD_BOOTS);
+        entries.add(ROSE_GOLD_HORSE_ARMOR);
     }
 
     private  static  void addItemsToUtilTab(FabricItemGroupEntries entries){
