@@ -1,0 +1,10 @@
+{
+  "asset_name": "rose_gold",
+  "description":
+  {
+    "color": "#f88c84",
+    "text": "Rose Gold"
+  },
+  "ingredient": "t3chsmod:rose_gold_ingot",
+  "item_model_index": 1.1
+}

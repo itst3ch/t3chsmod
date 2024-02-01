@@ -22,7 +22,7 @@ public class ModdedBlocks {
     public static void registerModBlocks() {
         T3CHsMod.LOGGER.info("Registering mod blocks for " + T3CHsMod.MOD_ID); //runs at init to register all blocks
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModdedBlocks:: addItemsToNaturalTab); //adds entries to natural tab
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModdedBlocks:: addItemsToNaturalTab); //adds entries to building blocks tab
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModdedBlocks:: addItemsToBuildingTab); //adds entries to building blocks tab
 
     }
 
