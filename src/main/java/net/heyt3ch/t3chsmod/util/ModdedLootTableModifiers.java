@@ -12,15 +12,24 @@ import net.minecraft.util.Identifier;
 
 public class ModdedLootTableModifiers
 {
+    private static final Identifier ACACIA_LEAVES_ID = new Identifier("minecraft", "blocks/acacia_leaves");
     private static final Identifier JUNGLE_LEAVES_ID = new Identifier("minecraft", "blocks/jungle_leaves");
 
     public static void modifyLootTable(){
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-            if(JUNGLE_LEAVES_ID.equals(id)){
+            if(ACACIA_LEAVES_ID.equals(id)){
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.05f))
                         .with(ItemEntry.builder(ModdedItems.MANGO))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder);
+            }
+            if(JUNGLE_LEAVES_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.05f))
+                        .with(ItemEntry.builder(ModdedItems.BANANA))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 tableBuilder.pool(poolBuilder);
             }

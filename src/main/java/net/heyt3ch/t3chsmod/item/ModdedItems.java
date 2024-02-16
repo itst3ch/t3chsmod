@@ -25,6 +25,7 @@ public class ModdedItems
     }
 
     public static final Item MANGO = registerItem("mango", new Item(new FabricItemSettings().food(ModdedFoodComponents.MANGO)));
+    public static final Item BANANA = registerItem("banana", new Item(new FabricItemSettings().food(ModdedFoodComponents.BANANA)));
 
 
     public static final Item ROSE_GOLD_INGOT = registerItem("rose_gold_ingot", new Item(new FabricItemSettings()));
@@ -45,6 +46,7 @@ public class ModdedItems
 
     private  static  void addItemsToFoodTab(FabricItemGroupEntries entries){
         entries.add(MANGO);
+        entries.add(BANANA);
     }
 
     private  static  void addItemsToIngTab(FabricItemGroupEntries entries){

@@ -5,4 +5,5 @@ import net.minecraft.item.FoodComponent;
 public class ModdedFoodComponents
 {
     public static final FoodComponent MANGO = new FoodComponent.Builder().hunger(4).saturationModifier(0.3f).build();
+    public static final FoodComponent BANANA = new FoodComponent.Builder().hunger(4).saturationModifier(0.3f).build();
 }
