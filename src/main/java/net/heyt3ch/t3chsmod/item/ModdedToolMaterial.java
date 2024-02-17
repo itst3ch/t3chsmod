@@ -9,7 +9,11 @@ import java.util.function.Supplier;
 
 public enum ModdedToolMaterial implements ToolMaterial
 {
-    ROSE_GOLD(350, 6.0f, 2.0f, MiningLevels.IRON, 14, () -> Ingredient.ofItems(Items.IRON_INGOT));
+    ROSE_GOLD(350, 6.0f, 2.0f, MiningLevels.IRON, 14, () -> Ingredient.ofItems(Items.IRON_INGOT)),
+    PINK_SALT_CRYSTAL(131, 5.0f, 2.0f, MiningLevels.IRON, 14, () -> Ingredient.ofItems(ModdedItems.PINK_ROCK_SALT_CRYSTAL)),
+    BLUE_SALT_CRYSTAL(250, 6.0f, 3.0f, MiningLevels.IRON, 14, () -> Ingredient.ofItems(ModdedItems.BLUE_ROCK_SALT_CRYSTAL)),
+    GREEN_SALT_CRYSTAL(200, 7.0f, 2.0f, MiningLevels.IRON, 14, () -> Ingredient.ofItems(ModdedItems.GREEN_ROCK_SALT_CRYSTAL));
+
 
     private final int durability;
     private final float miningSpeed;

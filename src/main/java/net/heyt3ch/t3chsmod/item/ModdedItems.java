@@ -42,6 +42,23 @@ public class ModdedItems
     public static final Item ROSE_GOLD_HOE = registerItem("rose_gold_hoe", new HoeItem(ModdedToolMaterial.ROSE_GOLD, 0, 2f, new FabricItemSettings()));
     public static final Item ROSE_GOLD_SHOVEL = registerItem("rose_gold_shovel", new ShovelItem(ModdedToolMaterial.ROSE_GOLD, 0, 2f, new FabricItemSettings()));
 
+    public static final Item PINK_ROCK_SALT_SWORD = registerItem("pink_rock_salt_sword", new SwordItem(ModdedToolMaterial.PINK_SALT_CRYSTAL, 3, -2.4f, new FabricItemSettings()));
+    public static final Item PINK_ROCK_SALT_PICKAXE = registerItem("pink_rock_salt_pickaxe", new PickaxeItem(ModdedToolMaterial.PINK_SALT_CRYSTAL, 1, -2.8f, new FabricItemSettings()));
+    public static final Item PINK_ROCK_SALT_AXE = registerItem("pink_rock_salt_axe", new AxeItem(ModdedToolMaterial.PINK_SALT_CRYSTAL, 6, -3.1f, new FabricItemSettings()));
+    public static final Item PINK_ROCK_SALT_HOE = registerItem("pink_rock_salt_hoe", new HoeItem(ModdedToolMaterial.PINK_SALT_CRYSTAL, 0, 2f, new FabricItemSettings()));
+    public static final Item PINK_ROCK_SALT_SHOVEL = registerItem("pink_rock_salt_shovel", new ShovelItem(ModdedToolMaterial.PINK_SALT_CRYSTAL, 0, 2f, new FabricItemSettings()));
+
+    public static final Item BLUE_ROCK_SALT_SWORD = registerItem("blue_rock_salt_sword", new SwordItem(ModdedToolMaterial.BLUE_SALT_CRYSTAL, 3, -2.4f, new FabricItemSettings()));
+    public static final Item BLUE_ROCK_SALT_PICKAXE = registerItem("blue_rock_salt_pickaxe", new PickaxeItem(ModdedToolMaterial.BLUE_SALT_CRYSTAL, 1, -2.8f, new FabricItemSettings()));
+    public static final Item BLUE_ROCK_SALT_AXE = registerItem("blue_rock_salt_axe", new AxeItem(ModdedToolMaterial.BLUE_SALT_CRYSTAL, 6, -3.1f, new FabricItemSettings()));
+    public static final Item BLUE_ROCK_SALT_HOE = registerItem("blue_rock_salt_hoe", new HoeItem(ModdedToolMaterial.BLUE_SALT_CRYSTAL, 0, 2f, new FabricItemSettings()));
+    public static final Item BLUE_ROCK_SALT_SHOVEL = registerItem("blue_rock_salt_shovel", new ShovelItem(ModdedToolMaterial.BLUE_SALT_CRYSTAL, 0, 2f, new FabricItemSettings()));
+
+    public static final Item GREEN_ROCK_SALT_SWORD = registerItem("green_rock_salt_sword", new SwordItem(ModdedToolMaterial.GREEN_SALT_CRYSTAL, 3, -2.4f, new FabricItemSettings()));
+    public static final Item GREEN_ROCK_SALT_PICKAXE = registerItem("green_rock_salt_pickaxe", new PickaxeItem(ModdedToolMaterial.GREEN_SALT_CRYSTAL, 1, -2.8f, new FabricItemSettings()));
+    public static final Item GREEN_ROCK_SALT_AXE = registerItem("green_rock_salt_axe", new AxeItem(ModdedToolMaterial.GREEN_SALT_CRYSTAL, 6, -3.1f, new FabricItemSettings()));
+    public static final Item GREEN_ROCK_SALT_HOE = registerItem("green_rock_salt_hoe", new HoeItem(ModdedToolMaterial.GREEN_SALT_CRYSTAL, 0, 2f, new FabricItemSettings()));
+    public static final Item GREEN_ROCK_SALT_SHOVEL = registerItem("green_rock_salt_shovel", new ShovelItem(ModdedToolMaterial.GREEN_SALT_CRYSTAL, 0, 2f, new FabricItemSettings()));
     public static final Item ROSE_GOLD_HELMET = registerItem("rose_gold_helmet", new ArmorItem(ModdedArmorMaterials.ROSE_GOLD, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item ROSE_GOLD_CHESTPLATE = registerItem("rose_gold_chestplate", new ArmorItem(ModdedArmorMaterials.ROSE_GOLD, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item ROSE_GOLD_LEGGINGS = registerItem("rose_gold_leggings", new ArmorItem(ModdedArmorMaterials.ROSE_GOLD, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
@@ -69,6 +86,10 @@ public class ModdedItems
         entries.add(ROSE_GOLD_LEGGINGS);
         entries.add(ROSE_GOLD_BOOTS);
         entries.add(ROSE_GOLD_HORSE_ARMOR);
+
+        entries.add(PINK_ROCK_SALT_SWORD);
+        entries.add(BLUE_ROCK_SALT_SWORD);
+        entries.add(GREEN_ROCK_SALT_SWORD);
     }
 
     private  static  void addItemsToUtilTab(FabricItemGroupEntries entries){
@@ -76,5 +97,18 @@ public class ModdedItems
         entries.add(ROSE_GOLD_HOE);
         entries.add(ROSE_GOLD_SHOVEL);
         entries.add(ROSE_GOLD_AXE);
+
+        entries.add(PINK_ROCK_SALT_PICKAXE);
+        entries.add(PINK_ROCK_SALT_HOE);
+        entries.add(PINK_ROCK_SALT_SHOVEL);
+        entries.add(PINK_ROCK_SALT_AXE);
+        entries.add(BLUE_ROCK_SALT_PICKAXE);
+        entries.add(BLUE_ROCK_SALT_HOE);
+        entries.add(BLUE_ROCK_SALT_SHOVEL);
+        entries.add(BLUE_ROCK_SALT_AXE);
+        entries.add(GREEN_ROCK_SALT_PICKAXE);
+        entries.add(GREEN_ROCK_SALT_HOE);
+        entries.add(GREEN_ROCK_SALT_SHOVEL);
+        entries.add(GREEN_ROCK_SALT_AXE);
     }
 }

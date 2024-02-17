@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "iron_ingot",
+  "ingredients": [
+    {
+      "item": "t3chsmod:green_rock_salt_block"
+    }
+  ],
+  "result": {
+    "item": "t3chsmod:green_rock_salt_crystal",
+    "count": 9
+  }
+}

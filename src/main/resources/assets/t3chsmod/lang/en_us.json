@@ -2,7 +2,6 @@
   "item.t3chsmod.mango": "Mango",
   "item.t3chsmod.banana": "Banana",
 
-
   "item.t3chsmod.rose_gold_ingot": "Rose Gold Ingot",
   "item.t3chsmod.rose_gold_sword": "Rose Gold Sword",
   "item.t3chsmod.rose_gold_shovel": "Rose Gold Shovel",
@@ -23,6 +22,21 @@
   "item.t3chsmod.pink_rock_salt_crystal": "Pink Rock Salt Crystal",
   "item.t3chsmod.blue_rock_salt_crystal": "Blue Rock Salt Crystal",
   "item.t3chsmod.green_rock_salt_crystal": "Green Rock Salt Crystal",
+  "item.t3chsmod.blue_rock_salt_sword": "Blue Rock Salt Sword",
+  "item.t3chsmod.blue_rock_salt_shovel": "Blue Rock Salt Shovel",
+  "item.t3chsmod.blue_rock_salt_hoe": "Blue Rock Salt Hoe",
+  "item.t3chsmod.blue_rock_salt_axe": "Blue Rock Salt Axe",
+  "item.t3chsmod.blue_rock_salt_pickaxe": "Blue Rock Salt Pickxe",
+  "item.t3chsmod.green_rock_salt_pickaxe": "Green Rock Salt Pickaxe",
+  "item.t3chsmod.green_rock_salt_sword": "Green Rock Salt Sword",
+  "item.t3chsmod.green_rock_salt_shovel": "Green Rock Salt Shovel",
+  "item.t3chsmod.green_rock_salt_hoe": "Green Rock Salt Hoe",
+  "item.t3chsmod.green_rock_salt_axe": "Green Rock Salt Axe",
+  "item.t3chsmod.pink_rock_salt_pickaxe": "Pink Rock Salt Pickaxe",
+  "item.t3chsmod.pink_rock_salt_sword": "Pink Rock Salt Sword",
+  "item.t3chsmod.pink_rock_salt_shovel": "Pink Rock Salt Shovel",
+  "item.t3chsmod.pink_rock_salt_hoe": "Pink Rock Salt Hoe",
+  "item.t3chsmod.pink_rock_salt_axe": "Pink Rock Salt Axe",
 
   "block.t3chsmod.red_sand_grass": "Red Sand Grass",
   "block.t3chsmod.sand_grass": "Sand Grass"
