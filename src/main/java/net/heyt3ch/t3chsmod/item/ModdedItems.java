@@ -4,6 +4,8 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.heyt3ch.t3chsmod.T3CHsMod;
+import net.heyt3ch.t3chsmod.item.RockSalt.PinkRockSaltAxe;
+import net.heyt3ch.t3chsmod.item.RockSalt.PinkRockSaltSword;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -43,11 +45,10 @@ public class ModdedItems
     public static final Item ROSE_GOLD_SHOVEL = registerItem("rose_gold_shovel", new ShovelItem(ModdedToolMaterial.ROSE_GOLD, 0, 2f, new FabricItemSettings()));
 
     public static final Item PINK_ROCK_SALT_SWORD = registerItem("pink_rock_salt_sword", new SwordItem(ModdedToolMaterial.PINK_SALT_CRYSTAL, 3, -2.4f, new FabricItemSettings()));
-    public static final Item PINK_ROCK_SALT_PICKAXE = registerItem("pink_rock_salt_pickaxe", new PickaxeItem(ModdedToolMaterial.PINK_SALT_CRYSTAL, 1, -2.8f, new FabricItemSettings()));
-    public static final Item PINK_ROCK_SALT_AXE = registerItem("pink_rock_salt_axe", new AxeItem(ModdedToolMaterial.PINK_SALT_CRYSTAL, 6, -3.1f, new FabricItemSettings()));
+    public static final Item PINK_ROCK_SALT_PICKAXE = registerItem("pink_rock_salt_pickaxe", new PinkRockSaltSword(ModdedToolMaterial.PINK_SALT_CRYSTAL, 1, -2.8f, new FabricItemSettings()));
+    public static final Item PINK_ROCK_SALT_AXE = registerItem("pink_rock_salt_axe", new PinkRockSaltAxe(ModdedToolMaterial.PINK_SALT_CRYSTAL, 6, -3.1f, new FabricItemSettings()));
     public static final Item PINK_ROCK_SALT_HOE = registerItem("pink_rock_salt_hoe", new HoeItem(ModdedToolMaterial.PINK_SALT_CRYSTAL, 0, 2f, new FabricItemSettings()));
     public static final Item PINK_ROCK_SALT_SHOVEL = registerItem("pink_rock_salt_shovel", new ShovelItem(ModdedToolMaterial.PINK_SALT_CRYSTAL, 0, 2f, new FabricItemSettings()));
-
     public static final Item BLUE_ROCK_SALT_SWORD = registerItem("blue_rock_salt_sword", new SwordItem(ModdedToolMaterial.BLUE_SALT_CRYSTAL, 3, -2.4f, new FabricItemSettings()));
     public static final Item BLUE_ROCK_SALT_PICKAXE = registerItem("blue_rock_salt_pickaxe", new PickaxeItem(ModdedToolMaterial.BLUE_SALT_CRYSTAL, 1, -2.8f, new FabricItemSettings()));
     public static final Item BLUE_ROCK_SALT_AXE = registerItem("blue_rock_salt_axe", new AxeItem(ModdedToolMaterial.BLUE_SALT_CRYSTAL, 6, -3.1f, new FabricItemSettings()));
