@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "t3chsmod:rose_gold_block"
+    "t3chsmod:rose_gold_block",
+    "t3chsmod:pink_rock_salt_block",
+    "t3chsmod:blue_rock_salt_block",
+    "t3chsmod:green_rock_salt_block"
   ]
 }

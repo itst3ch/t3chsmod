@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "t3chsmod:block/red_sand_grass"
+  }
+}

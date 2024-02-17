@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/tinted_cross",
+  "textures": {
+    "cross": "t3chsmod:block/red_sand_grass"
+  }
+}

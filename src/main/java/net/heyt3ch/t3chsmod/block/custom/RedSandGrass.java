@@ -7,8 +7,8 @@ import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.WorldView;
 
-public class SandGrass extends FlowerBlock {
-    public SandGrass(StatusEffect stewEffect, int duration, Settings settings) {
+public class RedSandGrass extends FlowerBlock {
+    public RedSandGrass(StatusEffect stewEffect, int duration, Settings settings) {
         super(stewEffect, duration, settings);
     }
 
@@ -17,7 +17,7 @@ public class SandGrass extends FlowerBlock {
     {
         BlockPos blockBelowPos = pos.down();
         BlockState blockBelow = world.getBlockState(blockBelowPos);
-        return blockBelow.getBlock() == Blocks.SAND;
+        return blockBelow.getBlock() == Blocks.RED_SAND;
     }
 
 }

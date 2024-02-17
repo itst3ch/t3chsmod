@@ -31,6 +31,11 @@ public class ModdedItems
     public static final Item ROSE_GOLD_INGOT = registerItem("rose_gold_ingot", new Item(new FabricItemSettings()));
     public static final Item ROSE_GOLD_NUGGET = registerItem("rose_gold_nugget", new Item(new FabricItemSettings()));
 
+    public static final Item PINK_ROCK_SALT_CRYSTAL = registerItem("pink_rock_salt_crystal", new Item(new FabricItemSettings()));
+    public static final Item BLUE_ROCK_SALT_CRYSTAL = registerItem("blue_rock_salt_crystal", new Item(new FabricItemSettings()));
+    public static final Item GREEN_ROCK_SALT_CRYSTAL = registerItem("green_rock_salt_crystal", new Item(new FabricItemSettings()));
+
+
     public static final Item ROSE_GOLD_SWORD = registerItem("rose_gold_sword", new SwordItem(ModdedToolMaterial.ROSE_GOLD, 3, -2.4f, new FabricItemSettings()));
     public static final Item ROSE_GOLD_PICKAXE = registerItem("rose_gold_pickaxe", new PickaxeItem(ModdedToolMaterial.ROSE_GOLD, 1, -2.8f, new FabricItemSettings()));
     public static final Item ROSE_GOLD_AXE = registerItem("rose_gold_axe", new AxeItem(ModdedToolMaterial.ROSE_GOLD, 6, -3.1f, new FabricItemSettings()));
@@ -52,6 +57,9 @@ public class ModdedItems
     private  static  void addItemsToIngTab(FabricItemGroupEntries entries){
         entries.add(ROSE_GOLD_INGOT);
         entries.add(ROSE_GOLD_NUGGET);
+        entries.add(PINK_ROCK_SALT_CRYSTAL);
+        entries.add(BLUE_ROCK_SALT_CRYSTAL);
+        entries.add(GREEN_ROCK_SALT_CRYSTAL);
     }
 
     private  static  void addItemsToWeaponsTab(FabricItemGroupEntries entries){

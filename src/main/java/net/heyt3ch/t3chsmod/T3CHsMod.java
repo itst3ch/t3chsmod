@@ -27,6 +27,7 @@ public class T3CHsMod implements ModInitializer {
 	public static final String MOD_ID = "t3chsmod";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	public static final Identifier SAND_GRASS_ID = new Identifier("t3chsmod", "sand_grass");
+	public static final Identifier RED_SAND_GRASS_ID = new Identifier("t3chsmod", "red_sand_grass");
 
 	@Override
 	public void onInitialize()
@@ -40,5 +41,9 @@ public class T3CHsMod implements ModInitializer {
 				BiomeSelectors.tag(ConventionalBiomeTags.DESERT),
 				GenerationStep.Feature.VEGETAL_DECORATION,
 				RegistryKey.of(RegistryKeys.PLACED_FEATURE, SAND_GRASS_ID));
+		BiomeModifications.addFeature(
+				BiomeSelectors.tag(ConventionalBiomeTags.MESA),
+				GenerationStep.Feature.VEGETAL_DECORATION,
+				RegistryKey.of(RegistryKeys.PLACED_FEATURE, RED_SAND_GRASS_ID));
 	}
 }

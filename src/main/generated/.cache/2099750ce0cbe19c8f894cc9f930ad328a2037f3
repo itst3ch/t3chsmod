@@ -1,4 +1,4 @@
-// 1.20.4	2024-01-30T21:14:52.4711944	T3CH's Mod/Model Definitions
+// 1.20.4	2024-02-16T22:56:05.2948132	T3CH's Mod/Model Definitions
 b711790297afad4fdfcf83a5d120f92c95b5d8c3 assets\t3chsmod\models\item\rose_gold_helmet_amethyst_trim.json
 8c05a4a7903eded5856c0a27ac774457e7c4a92c assets\t3chsmod\models\item\rose_gold_boots_lapis_trim.json
 741e2484f68829abf6373daa1e631b099a77a1b8 assets\t3chsmod\models\item\rose_gold_chestplate_redstone_trim.json
@@ -16,9 +16,9 @@ cc2d061fe5b551006f2901fe708c41831d0412e6 assets\t3chsmod\models\item\rose_gold_l
 7a8076a59006d45d226d94183cf4cf722a233829 assets\t3chsmod\models\item\rose_gold_chestplate_netherite_trim.json
 ee402c336c7efe6b5d6c6989f61189aa3e5b38b5 assets\t3chsmod\models\item\rose_gold_boots_emerald_trim.json
 5b7ea59492515a55122669a6e22b5293a0960ac8 assets\t3chsmod\models\item\rose_gold_chestplate_copper_trim.json
-b238a768fd53636b2e78f33a3d8c5fc76b4d91d6 assets\t3chsmod\models\item\rose_gold_leggings_copper_trim.json
 61786f2f21eb8c6010ccd5ded2a6b9f9eb9c1c3a assets\t3chsmod\models\item\rose_gold_helmet_gold_trim.json
 885db045ab0bf484531b7cac6f68b0377f214284 assets\t3chsmod\models\item\rose_gold_leggings_emerald_trim.json
+b238a768fd53636b2e78f33a3d8c5fc76b4d91d6 assets\t3chsmod\models\item\rose_gold_leggings_copper_trim.json
 f8732b8f8ece038b43b35bd7d1818fcda336ae0f assets\t3chsmod\models\item\rose_gold_chestplate_diamond_trim.json
 64d83ed3e168496fa9e8e70527964f4d25d3eede assets\t3chsmod\models\item\rose_gold_leggings_redstone_trim.json
 e80d2888c791d62661c01bfe503d98ec23f8d105 assets\t3chsmod\models\item\rose_gold_helmet_redstone_trim.json

@@ -12,5 +12,6 @@ public class T3CHsModClient implements ClientModInitializer
     public void onInitializeClient()
     {
         BlockRenderLayerMap.INSTANCE.putBlock(ModdedBlocks.SAND_GRASS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModdedBlocks.RED_SAND_GRASS, RenderLayer.getCutout());
     }
 }
