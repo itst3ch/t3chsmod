@@ -17,7 +17,13 @@
   "item.t3chsmod.rose_gold_nugget": "Rose Gold Nugget",
   "item.t3chsmod.rose_gold_horse_armor": "Rose Gold Horse Armor",
 
+  "block.t3chsmod.pink_rock_salt_block": "Pink Rock Salt Block",
+  "block.t3chsmod.blue_rock_salt_block": "Blue Rock Salt Block",
+  "block.t3chsmod.green_rock_salt_block": "Green Rock Salt Block",
+  "item.t3chsmod.pink_rock_salt_crystal": "Pink Rock Salt Crystal",
+  "item.t3chsmod.blue_rock_salt_crystal": "Blue Rock Salt Crystal",
+  "item.t3chsmod.green_rock_salt_crystal": "Green Rock Salt Crystal",
 
-
+  "block.t3chsmod.red_sand_grass": "Red Sand Grass",
   "block.t3chsmod.sand_grass": "Sand Grass"
 }

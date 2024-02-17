@@ -20,5 +20,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(ModdedBlocks.ROSE_GOLD_BLOCK);
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL).add(ModdedBlocks.ROSE_GOLD_BLOCK);
 
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(ModdedBlocks.PINK_ROCK_SALT_BLOCK);
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL).add(ModdedBlocks.PINK_ROCK_SALT_BLOCK);
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(ModdedBlocks.BLUE_ROCK_SALT_BLOCK);
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL).add(ModdedBlocks.BLUE_ROCK_SALT_BLOCK);
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(ModdedBlocks.GREEN_ROCK_SALT_BLOCK);
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL).add(ModdedBlocks.GREEN_ROCK_SALT_BLOCK);
     }
 }

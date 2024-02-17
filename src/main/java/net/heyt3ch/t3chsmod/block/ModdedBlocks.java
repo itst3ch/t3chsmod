@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.heyt3ch.t3chsmod.T3CHsMod;
+import net.heyt3ch.t3chsmod.block.custom.RedSandGrass;
 import net.heyt3ch.t3chsmod.block.custom.SandGrass;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -38,12 +39,23 @@ public class ModdedBlocks {
 
     private  static  void addItemsToNaturalTab(FabricItemGroupEntries entries){
         entries.add(SAND_GRASS);
+        entries.add(RED_SAND_GRASS);
     }
 
     private  static  void addItemsToBuildingTab(FabricItemGroupEntries entries){
         entries.add(ROSE_GOLD_BLOCK);
+        entries.add(PINK_ROCK_SALT_BLOCK);
+        entries.add(BLUE_ROCK_SALT_BLOCK);
+        entries.add(GREEN_ROCK_SALT_BLOCK);
     }
 
     public static final Block SAND_GRASS = registerBlock("sand_grass", new SandGrass(StatusEffects.ABSORPTION, 0, FabricBlockSettings.copyOf(Blocks.SHORT_GRASS).nonOpaque().noCollision()));
+    public static final Block RED_SAND_GRASS = registerBlock("red_sand_grass", new RedSandGrass(StatusEffects.ABSORPTION, 0, FabricBlockSettings.copyOf(Blocks.SHORT_GRASS).nonOpaque().noCollision()));
     public static final Block ROSE_GOLD_BLOCK = registerBlock("rose_gold_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
+    public static final Block PINK_ROCK_SALT_BLOCK = registerBlock("pink_rock_salt_block", new Block(FabricBlockSettings.copyOf(Blocks.CALCITE)));
+    public static final Block GREEN_ROCK_SALT_BLOCK = registerBlock("green_rock_salt_block", new Block(FabricBlockSettings.copyOf(Blocks.CALCITE)));
+    public static final Block BLUE_ROCK_SALT_BLOCK = registerBlock("blue_rock_salt_block", new Block(FabricBlockSettings.copyOf(Blocks.CALCITE)));
+
+
 }
