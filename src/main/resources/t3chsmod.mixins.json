@@ -4,6 +4,7 @@
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
 		"MixinPlayerEntity",
+		"MixinAbstractBlock"
 	],
 	"injectors": {
 		"defaultRequire": 1
