@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.heyt3ch.t3chsmod.T3CHsMod;
 import net.heyt3ch.t3chsmod.item.RockSalt.BlueRockSaltPickaxe;
+import net.heyt3ch.t3chsmod.item.RockSalt.GreenRockSaltHoe;
 import net.heyt3ch.t3chsmod.item.RockSalt.PinkRockSaltAxe;
 import net.heyt3ch.t3chsmod.item.RockSalt.PinkRockSaltSword;
 import net.minecraft.item.*;
@@ -59,7 +60,7 @@ public class ModdedItems
     public static final Item GREEN_ROCK_SALT_SWORD = registerItem("green_rock_salt_sword", new SwordItem(ModdedToolMaterial.GREEN_SALT_CRYSTAL, 3, -2.4f, new FabricItemSettings()));
     public static final Item GREEN_ROCK_SALT_PICKAXE = registerItem("green_rock_salt_pickaxe", new PickaxeItem(ModdedToolMaterial.GREEN_SALT_CRYSTAL, 1, -2.8f, new FabricItemSettings()));
     public static final Item GREEN_ROCK_SALT_AXE = registerItem("green_rock_salt_axe", new AxeItem(ModdedToolMaterial.GREEN_SALT_CRYSTAL, 6, -3.1f, new FabricItemSettings()));
-    public static final Item GREEN_ROCK_SALT_HOE = registerItem("green_rock_salt_hoe", new HoeItem(ModdedToolMaterial.GREEN_SALT_CRYSTAL, 0, 2f, new FabricItemSettings()));
+    public static final Item GREEN_ROCK_SALT_HOE = registerItem("green_rock_salt_hoe", new GreenRockSaltHoe(ModdedToolMaterial.GREEN_SALT_CRYSTAL, 0, 2f, new FabricItemSettings()));
     public static final Item GREEN_ROCK_SALT_SHOVEL = registerItem("green_rock_salt_shovel", new ShovelItem(ModdedToolMaterial.GREEN_SALT_CRYSTAL, 0, 2f, new FabricItemSettings()));
     public static final Item ROSE_GOLD_HELMET = registerItem("rose_gold_helmet", new ArmorItem(ModdedArmorMaterials.ROSE_GOLD, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item ROSE_GOLD_CHESTPLATE = registerItem("rose_gold_chestplate", new ArmorItem(ModdedArmorMaterials.ROSE_GOLD, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));

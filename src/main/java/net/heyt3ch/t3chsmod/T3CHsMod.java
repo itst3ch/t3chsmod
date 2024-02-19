@@ -45,5 +45,7 @@ public class T3CHsMod implements ModInitializer {
 				BiomeSelectors.tag(ConventionalBiomeTags.MESA),
 				GenerationStep.Feature.VEGETAL_DECORATION,
 				RegistryKey.of(RegistryKeys.PLACED_FEATURE, RED_SAND_GRASS_ID));
+
+
 	}
 }

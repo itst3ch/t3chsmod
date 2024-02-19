@@ -7,14 +7,14 @@
   ],
   "key": {
     "i": {
-      "item": "t3chsmod:pink_rock_salt_crystal"
+      "item": "t3chsmod:green_rock_salt_crystal"
     },
     "/": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "t3chsmod:pink_rock_salt_shovel",
+    "item": "t3chsmod:green_rock_salt_shovel",
     "count": 1
   }
 }

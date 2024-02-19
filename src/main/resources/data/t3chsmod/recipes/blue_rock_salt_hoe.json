@@ -1,20 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " i ",
+    " ii",
     " / ",
     " / "
   ],
   "key": {
     "i": {
-      "item": "t3chsmod:pink_rock_salt_crystal"
+      "item": "t3chsmod:blue_rock_salt_crystal"
     },
     "/": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "t3chsmod:pink_rock_salt_shovel",
+    "item": "t3chsmod:blue_rock_salt_hoe",
     "count": 1
   }
 }
