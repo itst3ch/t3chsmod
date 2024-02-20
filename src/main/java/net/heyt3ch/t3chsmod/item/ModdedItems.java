@@ -38,6 +38,8 @@ public class ModdedItems
     public static final Item PINK_ROCK_SALT_CRYSTAL = registerItem("pink_rock_salt_crystal", new Item(new FabricItemSettings()));
     public static final Item BLUE_ROCK_SALT_CRYSTAL = registerItem("blue_rock_salt_crystal", new Item(new FabricItemSettings()));
     public static final Item GREEN_ROCK_SALT_CRYSTAL = registerItem("green_rock_salt_crystal", new Item(new FabricItemSettings()));
+    public static final Item HALITE_CRYSTAL = registerItem("halite_crystal", new Item(new FabricItemSettings()));
+
 
 
     public static final Item ROSE_GOLD_SWORD = registerItem("rose_gold_sword", new SwordItem(ModdedToolMaterial.ROSE_GOLD, 3, -2.4f, new FabricItemSettings()));
@@ -72,6 +74,7 @@ public class ModdedItems
     private  static  void addItemsToFoodTab(FabricItemGroupEntries entries){
         entries.add(MANGO);
         entries.add(BANANA);
+        entries.add(HALITE_CRYSTAL);
     }
 
     private  static  void addItemsToIngTab(FabricItemGroupEntries entries){

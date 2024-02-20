@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "t3chsmod:halite_ore"
+  },
+  "result": "t3chsmod:halite_crystal",
+  "experience": 0.7,
+  "cookingtime": 200
+}

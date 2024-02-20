@@ -38,6 +38,9 @@
   "item.t3chsmod.pink_rock_salt_hoe": "Pink Rock Salt Hoe",
   "item.t3chsmod.pink_rock_salt_axe": "Pink Rock Salt Axe",
 
+  "block.t3chsmod.halite_ore": "Halite Ore",
+  "item.t3chsmod.halite_crystal": "Halite Crystal",
+
   "block.t3chsmod.red_sand_grass": "Red Sand Grass",
   "block.t3chsmod.sand_grass": "Sand Grass"
 }

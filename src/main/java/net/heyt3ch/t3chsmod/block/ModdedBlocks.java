@@ -9,8 +9,6 @@ import net.heyt3ch.t3chsmod.block.custom.RedSandGrass;
 import net.heyt3ch.t3chsmod.block.custom.SandGrass;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.FlowerBlock;
-import net.minecraft.block.FlowerPotBlock;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -40,6 +38,7 @@ public class ModdedBlocks {
     private  static  void addItemsToNaturalTab(FabricItemGroupEntries entries){
         entries.add(SAND_GRASS);
         entries.add(RED_SAND_GRASS);
+        entries.add(HALITE_ORE);
     }
 
     private  static  void addItemsToBuildingTab(FabricItemGroupEntries entries){
@@ -47,6 +46,7 @@ public class ModdedBlocks {
         entries.add(PINK_ROCK_SALT_BLOCK);
         entries.add(BLUE_ROCK_SALT_BLOCK);
         entries.add(GREEN_ROCK_SALT_BLOCK);
+        entries.add(HALITE_CRYSTAL_BLOCK);
     }
 
     public static final Block SAND_GRASS = registerBlock("sand_grass", new SandGrass(StatusEffects.ABSORPTION, 0, FabricBlockSettings.copyOf(Blocks.SHORT_GRASS).nonOpaque().noCollision()));
@@ -57,5 +57,6 @@ public class ModdedBlocks {
     public static final Block GREEN_ROCK_SALT_BLOCK = registerBlock("green_rock_salt_block", new Block(FabricBlockSettings.copyOf(Blocks.CALCITE)));
     public static final Block BLUE_ROCK_SALT_BLOCK = registerBlock("blue_rock_salt_block", new Block(FabricBlockSettings.copyOf(Blocks.CALCITE)));
 
-
+    public static final Block HALITE_ORE = registerBlock("halite_ore", new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
+    public static final Block HALITE_CRYSTAL_BLOCK = registerBlock("halite_crystal_block", new Block(FabricBlockSettings.copyOf(Blocks.CALCITE)));
 }

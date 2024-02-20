@@ -8,15 +8,10 @@ import net.fabricmc.fabric.api.tag.convention.v1.ConventionalBiomeTags;
 import net.heyt3ch.t3chsmod.block.ModdedBlocks;
 import net.heyt3ch.t3chsmod.item.ModdedItems;
 import net.heyt3ch.t3chsmod.util.ModdedLootTableModifiers;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.GenerationStep;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.PlacedFeature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -45,7 +40,6 @@ public class T3CHsMod implements ModInitializer {
 				BiomeSelectors.tag(ConventionalBiomeTags.MESA),
 				GenerationStep.Feature.VEGETAL_DECORATION,
 				RegistryKey.of(RegistryKeys.PLACED_FEATURE, RED_SAND_GRASS_ID));
-
 
 	}
 }
