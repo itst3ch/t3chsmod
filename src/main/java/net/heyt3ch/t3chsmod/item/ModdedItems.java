@@ -4,14 +4,17 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.heyt3ch.t3chsmod.T3CHsMod;
-import net.heyt3ch.t3chsmod.item.RockSalt.BlueRockSaltPickaxe;
-import net.heyt3ch.t3chsmod.item.RockSalt.GreenRockSaltHoe;
-import net.heyt3ch.t3chsmod.item.RockSalt.PinkRockSaltAxe;
-import net.heyt3ch.t3chsmod.item.RockSalt.PinkRockSaltSword;
+import net.heyt3ch.t3chsmod.item.RockSalt.*;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Util;
+
+import java.text.Format;
+import java.util.List;
 
 public class ModdedItems
 {
@@ -39,7 +42,6 @@ public class ModdedItems
     public static final Item BLUE_ROCK_SALT_CRYSTAL = registerItem("blue_rock_salt_crystal", new Item(new FabricItemSettings()));
     public static final Item GREEN_ROCK_SALT_CRYSTAL = registerItem("green_rock_salt_crystal", new Item(new FabricItemSettings()));
     public static final Item HALITE_CRYSTAL = registerItem("halite_crystal", new Item(new FabricItemSettings()));
-
 
 
     public static final Item ROSE_GOLD_SWORD = registerItem("rose_gold_sword", new SwordItem(ModdedToolMaterial.ROSE_GOLD, 3, -2.4f, new FabricItemSettings()));
