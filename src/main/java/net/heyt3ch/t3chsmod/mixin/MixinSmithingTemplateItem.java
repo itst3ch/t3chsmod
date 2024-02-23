@@ -15,11 +15,7 @@ import java.util.List;
 public abstract class MixinSmithingTemplateItem implements SmithingUpgradeItemAccess
 {
 
-    @Override
-    public void access()
-    {
-        System.out.printIn("Accessed SmithingItem thing haha");
-    }
+
     
     @Unique
     protected abstract List<Identifier> getNetheriteUpgradeEmptyBaseSlotTextures();
@@ -42,7 +38,7 @@ public abstract class MixinSmithingTemplateItem implements SmithingUpgradeItemAc
     @Unique
     private static final Text HALITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION_TEXT = Text.translatable(Util.createTranslationKey("item", new Identifier("smithing_template.halite_upgrade.additions_slot_description")));
 
-    @Unique
+    @Override
     public SmithingTemplateItem createHaliteUpgrade()
     {
         return new SmithingTemplateItem(HALITE_UPGRADE_APPLIES_TO_TEXT, HALITE_UPGRADE_INGREDIENTS_TEXT, HALITE_UPGRADE_TEXT, HALITE_UPGRADE_BASE_SLOT_DESCRIPTION_TEXT, HALITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION_TEXT, this.getNetheriteUpgradeEmptyBaseSlotTextures(), this.getNetheriteUpgradeEmptyAdditionsSlotTextures());
