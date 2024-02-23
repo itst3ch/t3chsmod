@@ -37,7 +37,7 @@ public class ModdedItems
     public static final Item BLUE_ROCK_SALT_CRYSTAL = registerItem("blue_rock_salt_crystal", new Item(new FabricItemSettings()));
     public static final Item GREEN_ROCK_SALT_CRYSTAL = registerItem("green_rock_salt_crystal", new Item(new FabricItemSettings()));
     public static final Item HALITE_CRYSTAL = registerItem("halite_crystal", new Item(new FabricItemSettings()));
-    public static final Item HALITE_UPGRADE = registerItem("halite_upgrade", MixinSmithingTemplateItem.createHaliteUpgrade());
+    public static final Item HALITE_UPGRADE = registerItem("halite_upgrade", ((SmithingUpgradeItemAccess)instance).createHaliteUpgrade());
 
     public static final Item ROSE_GOLD_SWORD = registerItem("rose_gold_sword", new SwordItem(ModdedToolMaterial.ROSE_GOLD, 3, -2.4f, new FabricItemSettings()));
     public static final Item ROSE_GOLD_PICKAXE = registerItem("rose_gold_pickaxe", new PickaxeItem(ModdedToolMaterial.ROSE_GOLD, 1, -2.8f, new FabricItemSettings()));
