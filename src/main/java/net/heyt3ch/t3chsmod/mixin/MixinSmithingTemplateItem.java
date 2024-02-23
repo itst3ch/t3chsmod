@@ -12,9 +12,15 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import java.util.List;
 
 @Mixin(SmithingTemplateItem.class)
-public abstract class MixinSmithingTemplateItem
+public abstract class MixinSmithingTemplateItem implements SmithingUpgradeItemAccess
 {
 
+    @Override
+    public void access()
+    {
+        System.out.printIn("Accessed SmithingItem thing haha");
+    }
+    
     @Unique
     protected abstract List<Identifier> getNetheriteUpgradeEmptyBaseSlotTextures();
 
