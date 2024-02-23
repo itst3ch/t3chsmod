@@ -1,5 +1,6 @@
 package net.heyt3ch.t3chsmod.mixin;
 
+import net.heyt3ch.t3chsmod.access.STIAccess;
 import net.minecraft.item.SmithingTemplateItem;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
@@ -7,17 +8,11 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
-import org.spongepowered.asm.mixin.injection.Inject;
-import net.heyt3ch.t3chsmod.access.SmithingUpgradeItemAccess;
 
 import java.util.List;
 
 @Mixin(SmithingTemplateItem.class)
-public abstract class MixinSmithingTemplateItem implements SmithingUpgradeItemAccess
-{
-
-
-    
+public abstract class MixinSmithingTemplateItem implements STIAccess {
     @Unique
     protected abstract List<Identifier> getNetheriteUpgradeEmptyBaseSlotTextures();
 
@@ -39,7 +34,7 @@ public abstract class MixinSmithingTemplateItem implements SmithingUpgradeItemAc
     @Unique
     private static final Text HALITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION_TEXT = Text.translatable(Util.createTranslationKey("item", new Identifier("smithing_template.halite_upgrade.additions_slot_description")));
 
-    @Override
+    @Unique
     public SmithingTemplateItem createHaliteUpgrade()
     {
         return new SmithingTemplateItem(HALITE_UPGRADE_APPLIES_TO_TEXT, HALITE_UPGRADE_INGREDIENTS_TEXT, HALITE_UPGRADE_TEXT, HALITE_UPGRADE_BASE_SLOT_DESCRIPTION_TEXT, HALITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION_TEXT, this.getNetheriteUpgradeEmptyBaseSlotTextures(), this.getNetheriteUpgradeEmptyAdditionsSlotTextures());
