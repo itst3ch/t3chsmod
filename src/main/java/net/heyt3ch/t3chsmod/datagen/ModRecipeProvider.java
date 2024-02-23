@@ -24,7 +24,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             if (Registries.ITEM.getEntry(item).isIn(ModItemTagProvider.ARMOR))
             {
                 //create smithing recipe
-                //SmithingTransformRecipeJsonBuilder.create(ModdedItems.HALITE_UPGRADE_TEMPLATE, item, ModdedItems.HALITE_CRYSTAL, RecipeCategory.COMBAT, Items.ACACIA_BOAT);
+                //SmithingTransformRecipeJsonBuilder.create(ModdedItems.HALITE_UPGRADE, item, ModdedItems.HALITE_CRYSTAL, RecipeCategory.COMBAT, Items.ACACIA_BOAT);
             }
         }
     }
