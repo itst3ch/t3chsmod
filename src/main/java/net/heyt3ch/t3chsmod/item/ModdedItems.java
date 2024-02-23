@@ -5,16 +5,11 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.heyt3ch.t3chsmod.T3CHsMod;
 import net.heyt3ch.t3chsmod.item.RockSalt.*;
+import net.heyt3ch.t3chsmod.mixin.MixinSmithingTemplateItem;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.text.Text;
-import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Util;
-
-import java.text.Format;
-import java.util.List;
 
 public class ModdedItems
 {
@@ -42,7 +37,7 @@ public class ModdedItems
     public static final Item BLUE_ROCK_SALT_CRYSTAL = registerItem("blue_rock_salt_crystal", new Item(new FabricItemSettings()));
     public static final Item GREEN_ROCK_SALT_CRYSTAL = registerItem("green_rock_salt_crystal", new Item(new FabricItemSettings()));
     public static final Item HALITE_CRYSTAL = registerItem("halite_crystal", new Item(new FabricItemSettings()));
-
+    public static final Item HALITE_UPGRADE = registerItem("halite_upgrade", MixinSmithingTemplateItem.createHaliteUpgrade());
 
     public static final Item ROSE_GOLD_SWORD = registerItem("rose_gold_sword", new SwordItem(ModdedToolMaterial.ROSE_GOLD, 3, -2.4f, new FabricItemSettings()));
     public static final Item ROSE_GOLD_PICKAXE = registerItem("rose_gold_pickaxe", new PickaxeItem(ModdedToolMaterial.ROSE_GOLD, 1, -2.8f, new FabricItemSettings()));
@@ -85,6 +80,7 @@ public class ModdedItems
         entries.add(PINK_ROCK_SALT_CRYSTAL);
         entries.add(BLUE_ROCK_SALT_CRYSTAL);
         entries.add(GREEN_ROCK_SALT_CRYSTAL);
+        entries.add(HALITE_UPGRADE);
     }
 
     private  static  void addItemsToWeaponsTab(FabricItemGroupEntries entries){
