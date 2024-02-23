@@ -8,7 +8,7 @@ import net.minecraft.util.Util;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.Inject;
-import net.heyt3ch.t3chsmod.access.SmithingUpgradeItemAccess.*;
+import net.heyt3ch.t3chsmod.access.SmithingUpgradeItemAccess;
 
 import java.util.List;
 
