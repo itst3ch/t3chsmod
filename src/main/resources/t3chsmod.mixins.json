@@ -4,8 +4,7 @@
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
 		"MixinPlayerEntity",
-		"MixinAbstractBlock",
-		"MixinSmithingTemplateItem"
+		"MixinAbstractBlock"
 	],
 	"injectors": {
 		"defaultRequire": 1
