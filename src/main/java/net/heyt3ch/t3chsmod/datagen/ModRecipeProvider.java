@@ -8,6 +8,7 @@ import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.data.server.recipe.SmithingTransformRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.Registries;
 
@@ -24,7 +25,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             if (Registries.ITEM.getEntry(item).isIn(ModItemTagProvider.ARMOR))
             {
                 //create smithing recipe
-                //SmithingTransformRecipeJsonBuilder.create(ModdedItems.HALITE_UPGRADE, item, ModdedItems.HALITE_CRYSTAL, RecipeCategory.COMBAT, Items.ACACIA_BOAT);
+                SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModdedItems.HALITE_UPGRADE), Ingredient.ofItems(item), Ingredient.ofItems(ModdedItems.HALITE_CRYSTAL), RecipeCategory.COMBAT, Items.ACACIA_BOAT);
             }
         }
     }
