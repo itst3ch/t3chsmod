@@ -30,13 +30,5 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModdedItems.ROSE_GOLD_HELMET, ModdedItems.ROSE_GOLD_CHESTPLATE, ModdedItems.ROSE_GOLD_LEGGINGS, ModdedItems.ROSE_GOLD_BOOTS);
-
-        for(Item item : Registries.ITEM)
-        {
-            if (item instanceof Equipment && EnchantmentTarget.ARMOR.isAcceptableItem(item))
-            {
-                getOrCreateTagBuilder(ARMOR).add(item);
-            }
-        }
     }
 }

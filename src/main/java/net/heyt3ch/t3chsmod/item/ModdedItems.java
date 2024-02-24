@@ -46,11 +46,12 @@ public class ModdedItems
 
     private static SmithingTemplateItem createHaliteUpgrade()
     {
-        return new SmithingTemplateItem(Text.translatable(Util.createTranslationKey("item", new Identifier("smithing_template.halite_upgrade.applies_to"))).formatted(Formatting.BLUE),
-                Text.translatable(Util.createTranslationKey("item", new Identifier("smithing_template.halite_upgrade.ingredients"))).formatted(Formatting.BLUE),
-                Text.translatable(Util.createTranslationKey("upgrade", new Identifier("halite_upgrade"))).formatted(Formatting.GRAY),
-                Text.translatable(Util.createTranslationKey("item", new Identifier("smithing_template.halite_upgrade.base_slot_description"))),
-                Text.translatable(Util.createTranslationKey("item", new Identifier("smithing_template.halite_upgrade.additions_slot_description"))),
+        return new SmithingTemplateItem(
+                Text.translatable(Util.createTranslationKey("item", new Identifier("t3chsmod", "smithing_template.halite_upgrade.applies_to"))).formatted(Formatting.BLUE),
+                Text.translatable(Util.createTranslationKey("item", new Identifier("t3chsmod", "smithing_template.halite_upgrade.ingredients"))).formatted(Formatting.BLUE),
+                Text.translatable(Util.createTranslationKey("upgrade", new Identifier("t3chsmod", "halite_upgrade"))).formatted(Formatting.GRAY),
+                Text.translatable(Util.createTranslationKey("item", new Identifier("t3chsmod", "smithing_template.halite_upgrade.base_slot_description"))),
+                Text.translatable(Util.createTranslationKey("item", new Identifier("t3chsmod", "smithing_template.halite_upgrade.additions_slot_description"))),
                 List.of(new Identifier("item/empty_armor_slot_helmet"), new Identifier("item/empty_armor_slot_chestplate"), new Identifier("item/empty_armor_slot_leggings"), new Identifier("item/empty_armor_slot_boots")),
                 List.of(new Identifier("item/empty_slot_ingot"), new Identifier("item/empty_slot_redstone_dust"), new Identifier("item/empty_slot_lapis_lazuli"), new Identifier("item/empty_slot_quartz"), new Identifier("item/empty_slot_diamond"), new Identifier("item/empty_slot_emerald"), new Identifier("item/empty_slot_amethyst_shard")));
     }
