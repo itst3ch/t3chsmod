@@ -7,7 +7,7 @@
     "item": "minecraft:turtle_helmet"
   },
   "result": {
-    "item": "minecraft:acacia_boat"
+    "item": "minecraft:turtle_helmet"
   },
   "template": {
     "item": "t3chsmod:halite_upgrade"

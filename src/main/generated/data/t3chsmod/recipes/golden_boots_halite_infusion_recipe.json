@@ -7,7 +7,7 @@
     "item": "minecraft:golden_boots"
   },
   "result": {
-    "item": "minecraft:acacia_boat"
+    "item": "minecraft:golden_boots"
   },
   "template": {
     "item": "t3chsmod:halite_upgrade"

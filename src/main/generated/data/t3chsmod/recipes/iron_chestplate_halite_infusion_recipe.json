@@ -7,7 +7,7 @@
     "item": "minecraft:iron_chestplate"
   },
   "result": {
-    "item": "minecraft:acacia_boat"
+    "item": "minecraft:iron_chestplate"
   },
   "template": {
     "item": "t3chsmod:halite_upgrade"

@@ -7,7 +7,7 @@
     "item": "minecraft:netherite_helmet"
   },
   "result": {
-    "item": "minecraft:acacia_boat"
+    "item": "minecraft:netherite_helmet"
   },
   "template": {
     "item": "t3chsmod:halite_upgrade"
