@@ -40,12 +40,6 @@
 
   "block.t3chsmod.halite_ore": "Halite Ore",
   "item.t3chsmod.halite_crystal": "Halite Crystal",
-  "item.t3chsmod.smithing_template.halite_upgrade.applies_to": "Any Armor",
-  "item.t3chsmod.smithing_template.halite_upgrade.ingredients": "Halite Crystal",
-  "upgrade.t3chsmod.halite_upgrade": "Halite Upgrade",
-  "item.t3chsmod.halite_upgrade": "Halite Upgrade Template",
-  "item.t3chsmod.smithing_template.halite_upgrade.base_slot_description": "Add any armor piece",
-  "item.t3chsmod.smithing_template.halite_upgrade.additions_slot_description": "Add Halite Crystal",
 
 
   "block.t3chsmod.red_sand_grass": "Red Sand Grass",
