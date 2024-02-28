@@ -4,10 +4,16 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.fabricmc.fabric.api.tag.convention.v1.ConventionalBiomeTags;
 import net.heyt3ch.t3chsmod.block.ModdedBlocks;
+import net.heyt3ch.t3chsmod.block.custom.HaliteBeacon;
+import net.heyt3ch.t3chsmod.block.custom.HaliteBeaconBlockEntity;
 import net.heyt3ch.t3chsmod.item.ModdedItems;
 import net.heyt3ch.t3chsmod.util.ModdedLootTableModifiers;
+import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
@@ -23,6 +29,12 @@ public class T3CHsMod implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	public static final Identifier SAND_GRASS_ID = new Identifier("t3chsmod", "sand_grass");
 	public static final Identifier RED_SAND_GRASS_ID = new Identifier("t3chsmod", "red_sand_grass");
+
+	public static final BlockEntityType<HaliteBeaconBlockEntity> HALITE_BEACON_BLOCK_ENTITY_TYPE = Registry.register(
+			Registries.BLOCK_ENTITY_TYPE,
+			new Identifier("t3chsmod", "halite_infused_beacon_entity"),
+			FabricBlockEntityTypeBuilder.create(HaliteBeaconBlockEntity::new, ModdedBlocks.HALITE_INFUSED_BEACON).build()
+	);
 
 	@Override
 	public void onInitialize()

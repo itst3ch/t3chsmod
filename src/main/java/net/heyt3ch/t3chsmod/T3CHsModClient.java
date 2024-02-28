@@ -13,5 +13,7 @@ public class T3CHsModClient implements ClientModInitializer
     {
         BlockRenderLayerMap.INSTANCE.putBlock(ModdedBlocks.SAND_GRASS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModdedBlocks.RED_SAND_GRASS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModdedBlocks.HALITE_INFUSED_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModdedBlocks.HALITE_INFUSED_BEACON, RenderLayer.getTranslucent());
     }
 }

@@ -26,5 +26,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL).add(ModdedBlocks.BLUE_ROCK_SALT_BLOCK);
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(ModdedBlocks.GREEN_ROCK_SALT_BLOCK);
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL).add(ModdedBlocks.GREEN_ROCK_SALT_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(ModdedBlocks.HALITE_INFUSED_GLASS);
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL).add(ModdedBlocks.HALITE_INFUSED_GLASS);
     }
 }

@@ -40,6 +40,9 @@
 
   "block.t3chsmod.halite_ore": "Halite Ore",
   "item.t3chsmod.halite_crystal": "Halite Crystal",
+  "block.t3chsmod.halite_infused_glass": "Halite Infused Glass",
+  "block.t3chsmod.halite_crystal_block": "Halite Crystal Block",
+  "block.t3chsmod.halite_infused_beacon": "Halite Infused Beacon",
 
 
   "block.t3chsmod.red_sand_grass": "Red Sand Grass",
