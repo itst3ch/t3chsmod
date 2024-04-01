@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.heyt3ch.t3chsmod.T3CHsMod;
-import net.heyt3ch.t3chsmod.block.custom.HaliteBeacon;
 import net.heyt3ch.t3chsmod.block.custom.RedSandGrass;
 import net.heyt3ch.t3chsmod.block.custom.SandGrass;
 import net.minecraft.block.Block;
@@ -48,8 +47,6 @@ public class ModdedBlocks {
         entries.add(BLUE_ROCK_SALT_BLOCK);
         entries.add(GREEN_ROCK_SALT_BLOCK);
         entries.add(HALITE_CRYSTAL_BLOCK);
-        entries.add(HALITE_INFUSED_GLASS);
-        entries.add(HALITE_INFUSED_BEACON);
     }
 
     public static final Block SAND_GRASS = registerBlock("sand_grass", new SandGrass(StatusEffects.ABSORPTION, 0, FabricBlockSettings.copyOf(Blocks.SHORT_GRASS).nonOpaque().noCollision()));
@@ -62,6 +59,4 @@ public class ModdedBlocks {
 
     public static final Block HALITE_ORE = registerBlock("halite_ore", new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
     public static final Block HALITE_CRYSTAL_BLOCK = registerBlock("halite_crystal_block", new Block(FabricBlockSettings.copyOf(Blocks.CALCITE)));
-    public static final Block HALITE_INFUSED_GLASS = registerBlock("halite_infused_glass", new Block(FabricBlockSettings.copyOf(Blocks.TINTED_GLASS).nonOpaque()));
-    public static final Block HALITE_INFUSED_BEACON = registerBlock("halite_infused_beacon", new HaliteBeacon(FabricBlockSettings.copyOf(Blocks.BEACON).nonOpaque()));
 }

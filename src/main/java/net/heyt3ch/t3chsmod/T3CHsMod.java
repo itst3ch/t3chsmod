@@ -7,8 +7,6 @@ import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.fabricmc.fabric.api.tag.convention.v1.ConventionalBiomeTags;
 import net.heyt3ch.t3chsmod.block.ModdedBlocks;
-import net.heyt3ch.t3chsmod.block.custom.HaliteBeacon;
-import net.heyt3ch.t3chsmod.block.custom.HaliteBeaconBlockEntity;
 import net.heyt3ch.t3chsmod.item.ModdedItems;
 import net.heyt3ch.t3chsmod.util.ModdedLootTableModifiers;
 import net.minecraft.block.entity.BlockEntityType;
